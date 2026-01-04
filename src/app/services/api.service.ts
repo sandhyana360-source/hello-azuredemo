@@ -6,7 +6,7 @@ import { Observable}  from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-private apiUrl = 'https://helloUi.azurewebsites.net/api/hello';
+private apiUrl = 'https://helloapi-freeazuredemo-eqetdtdegvdac7e6.canadacentral-01.azurewebsites.net/api/hello';
   constructor(private http: HttpClient) { }
 
   
