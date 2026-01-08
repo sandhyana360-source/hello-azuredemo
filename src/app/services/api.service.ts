@@ -7,10 +7,11 @@ import { Observable}  from 'rxjs';
 })
 export class ApiService {
 private apiUrl = 'https://helloapi-freeazuredemo-eqetdtdegvdac7e6.canadacentral-01.azurewebsites.net/api/hello';
-  constructor(private http: HttpClient) { }
+
+constructor(private http: HttpClient) { }
 
   
-  getMessage(): Observable<string> {
+  getMessage() {
     
     return this.http.get(this.apiUrl,{ responseType: 'text'});
   }
